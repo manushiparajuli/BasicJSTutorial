@@ -1,24 +1,30 @@
 <html>
 <head>
-
+	   
 <script>
+
    // alert("This shows on top")
-   document.write ("Simply print statement:  hi");  //print statement
+   
+//print statement
+
+   document.write ("Simply print statement:  hi");  
    document.write ("<br></br>"); 
 
-   <!--Javascript doesn't require variable type-->
-   //checking data value and type
+//checking data value and type
+       <!--Javascript doesn't require variable type-->
+
    var e = 10;
    var f ="10";
    
    var g = e === f; //checks the datatype
    var h = e == f; //checks the value
     document.write ("Checking the data type: ", g);
-    document.write ("<br></br>"); 
+    document.write ("</br>"); 
 	document.write ("Checking the data value: ", h); 
     document.write ("<br></br>"); 
 
-   //operators
+ //operators
+   
    var a =10; 
    var b =20;
    var c = a+b;
@@ -26,76 +32,144 @@
 
       document.write ("Calculating with operator: ",c);
 	  
-	  //for spacing
-	  document.write ("<br></br>"); 
+//for spacing
+	 
+   	  document.write ("</br>"); 
 	  document.write ("Boolean with operator: ", d);
 	  document.write ("<br></br>");
 	  
 	  
 	  
-	  //Conditional statements
+//Conditional statements
+
 	  if(a>b){
-	   document.write("It's true");
+	   document.write("If condition: It's true");
 	   }
 	   else if(a==b)
 	   {
-	      document.write ("They are equal");
+	      document.write ("Else if condition: They are equal");
 	   }
 	   else{
-	   	   document.write("It's false");
+	   	   document.write("Else condition: It's false");
 	   }
-	   	  document.write ("<br></br>");
+	   	  document.write ("</br>");
 		
 		
 		  
-	  //switch statements also works instead of if else
+//switch statements also works instead of if else
 	   switch(b){
-	   case 10: document.write("It's a 10 number");
+	   case 10: document.write("Switch case: It's a 10 number");
 	   break;
-	   case 20: document.write("It's a 20 number");
+	   case 20: document.write("Switch case: It's a 20 number");
 	   break;
 	   }
 	   document.write ("<br></br>");
 
 	   
-	   //loops
+//loops
+
 	   //while loop
+	   document.write ("While Loop: ");
+	   document.write ("</br>");
+
 	   var count = 5; 
 	   while(count<10){
 	   document.write ("Manushi is beautiful ");
 	    count++;
 	   }
-	   document.write ("<br></br>");
+	   document.write ("</br>");
 	   
 	   
 	   //do while loop
+	   document.write ("Do While Loop: ");
+
 	   do{
 	   document.write ("Manushi is awesome");
 	   	    count++;
 	   }while(count<5);
-	   document.write ("<br></br>");
+	   document.write ("</br>");
 	   
 	   var p =6;
 	   //for loop
+	   document.write ("For Loop: ");	   
 	   for(var i =0; i < p; i++){
 	   document.write ("Ohh gosh ");
 	   }
 	   
 	   document.write ("<br></br>");
-	   //array
-	   var array = new Array;
-	   array[0] ="Manushi";
-	   array[1] =" is the best coder";
-       document.write(array[1]);
+	   
+	   
+//array
+          /*Example
+	        var array = new Array;
+	        array[0] ="Manushi";
+	        array[1] =" is the best coder";
+			*/
+			
+	  //for shortcut use
+	   document.write ("ArrayTime Guys: ");
+	   document.write ("</br>");	   
+	   var arrays = ["Manushi", " is the best coder"];
+       document.write("Print Array: ", arrays[1]);
+	   document.write ("</br>");	   
+	   document.write ("Concat Array: ");
+
+	   //concatination of array
+	   var a = ["Hi", " Roses are red"];
+	   var b = [1, 2, 3];
+	   
+	   var greeting = a.concat(b);
+	   document.write(greeting);
    
 	
-	
+	   //array sort
+	   var letter = new Array[5];
+	   
+	   letter[0] = "l";
+	   letter[1] = "K";
+       letter[2] = "Z";
+	   letter[3] = "A";
+	   letter[4] = "L";
+	   letter.sort();
+	   document.write(letter[0]);
+	   document.write(letter[1]);
+	   document.write(letter[2]);
+	   document.write(letter[3]);
+	   document.write(letter[4]);
+
 
 </script> 
+<br></br>
+
+<script>
+
+//functions
+     function sum(s,t){
+        var u = s + t;
+		document.write("Implementing funtion: ", u);
+    }
+sum(20,17);
+
+document.write("</br>");
+//Strings
+     var string = "Hi Manushi";
+	 var len = string.length;
+	 var findChar = string.charAt(3);
+	 var ascii = string.charCodeAt(3);
+	 var index = string.indexOf(a);
+
+	 
+	 document.write("Length of String: ",len);
+	 document.write("</br>")
+	 document.write("Char position: ",findChar);
+	 document.write("</br>")
+	 document.write("Char ASCII: ",ascii);
+	 document.write("</br>")
+	 document.write("Finding Index: ",index);
+
+
+</script>
 
 </head>
-
-
-
 
 </html>
