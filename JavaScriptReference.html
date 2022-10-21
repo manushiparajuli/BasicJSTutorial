@@ -1,0 +1,101 @@
+<html>
+<head>
+
+<script>
+   // alert("This shows on top")
+   document.write ("Simply print statement:  hi");  //print statement
+   document.write ("<br></br>"); 
+
+   <!--Javascript doesn't require variable type-->
+   //checking data value and type
+   var e = 10;
+   var f ="10";
+   
+   var g = e === f; //checks the datatype
+   var h = e == f; //checks the value
+    document.write ("Checking the data type: ", g);
+    document.write ("<br></br>"); 
+	document.write ("Checking the data value: ", h); 
+    document.write ("<br></br>"); 
+
+   //operators
+   var a =10; 
+   var b =20;
+   var c = a+b;
+   var d = a>b;
+
+      document.write ("Calculating with operator: ",c);
+	  
+	  //for spacing
+	  document.write ("<br></br>"); 
+	  document.write ("Boolean with operator: ", d);
+	  document.write ("<br></br>");
+	  
+	  
+	  
+	  //Conditional statements
+	  if(a>b){
+	   document.write("It's true");
+	   }
+	   else if(a==b)
+	   {
+	      document.write ("They are equal");
+	   }
+	   else{
+	   	   document.write("It's false");
+	   }
+	   	  document.write ("<br></br>");
+		
+		
+		  
+	  //switch statements also works instead of if else
+	   switch(b){
+	   case 10: document.write("It's a 10 number");
+	   break;
+	   case 20: document.write("It's a 20 number");
+	   break;
+	   }
+	   document.write ("<br></br>");
+
+	   
+	   //loops
+	   //while loop
+	   var count = 5; 
+	   while(count<10){
+	   document.write ("Manushi is beautiful ");
+	    count++;
+	   }
+	   document.write ("<br></br>");
+	   
+	   
+	   //do while loop
+	   do{
+	   document.write ("Manushi is awesome");
+	   	    count++;
+	   }while(count<5);
+	   document.write ("<br></br>");
+	   
+	   var p =6;
+	   //for loop
+	   for(var i =0; i < p; i++){
+	   document.write ("Ohh gosh ");
+	   }
+	   
+	   document.write ("<br></br>");
+	   //array
+	   var array = new Array;
+	   array[0] ="Manushi";
+	   array[1] =" is the best coder";
+       document.write(array[1]);
+   
+	
+	
+
+</script> 
+
+</head>
+
+
+
+
+</html>
